@@ -5,6 +5,8 @@ The Enhanced Particle Tracking Model Version 2.0 (ePTM v2) is a computational mo
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/ePTMv2Logo.jpg)
 
+Information on installing the model, using it, and its structure can be found in the model Wiki pages here: [Link](https://github.com/cvclcm/ePTM_v2/wiki)
+
 # Table of contents
 1. Introduction
 2. Use case
