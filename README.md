@@ -86,9 +86,13 @@ The ePTM v2 is currently being used in the evaluation of alternative water manag
 
 ## Core team
 The core model development team comprises of the following entities:
+
 University of California, Santa Cruz: Institute of Marine Sciences
+
 Southwest Fisheries Sience Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
+
 United States Bureeau of Reclamation
+
 Qeda Consulting, LLC.
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=cvclcm/ePTM_v2)
