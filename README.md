@@ -8,9 +8,10 @@ The Enhanced Particle Tracking Model Version 2.0 (ePTM v2) is a computational mo
 # Table of contents
 1. Introduction
 2. Use case
-3. Computing requirements
+3. Background
+4. Computing requirements
 5. Installation
-6. Background
+6. Project information
 
 # Introduction
 The model can be described in a variety of ways to varying degrees of specificity:
@@ -46,6 +47,21 @@ Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating thro
 
 In the context of the California Central Valley, this model is used to provide monthly survival estimates for endangered juvenile Sacramento River Winter-run Chinook salmon rearing and migrating through the Sacramento-San Joaquin Delta. These estimates are then used within a larger stage-structured population dynamics model, the Central Valley Life Cycle Model: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/intro).
 
+# Background
+ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
+
+The ePTM v2 simulates three aspects of aquatic animal movement: migration by swimming, route selection through complex topologies such as river branches and channel junctions in the presence of flow reversals due to tides and water operations, and mortality by predation. While the details of these mechanisms are too complex to discuss here, a brief description of the model structure is available here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/documents/documentation/ePTM_Study_Plan_FINAL_02_12_2021_v2.pdf). This document also contains information on how the model continues to be, and can be used in a variety of water management applications. We have made a video describing the biological behavior rules in the model, which can be found here: [Link](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/Sridharan_04_09_21_BDSC_ePTMV2Description.mp4). 
+
+## Model development process
+This is a scientific model that has been developed with the following core principles:
+1. Be self-consistent across multiple scales of motion and include realistic physical and biological processes
+2. Be nimble and scalable enough to be deployed for multi-decadal population dynamics simulations and be versatile enough to be used either as a standalone or as a component of a larger modeling ecosystem while yet retaining state-of-the-art numerical sophistication and realism
+3. Be borne out of an inclusive and transparent process through multi-entity collaboration which utilizes hiqgh-quality scientific data, a multidisciplinary development team and active stakeholder engagement with domain experts and decision makers in the California Central Valley.
+
+The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Bureau of Reclamation. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
+
+Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/resources).
+
 # Computing requirements
 The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can be run in one-shot or batch mode. The following hardware and software dependencies are required to run the model:
 
@@ -62,20 +78,11 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 9. HEC-DssVue to visualize hydrodynamic time series from DSM2: [Link](https://www.hec.usace.army.mil/software/hec-dssvue/)
 10. Google Earth Pro to visualize the DSM2 grid (this will be invaluable when setting up the model for cutom use in the California Central Valley): [Link](https://www.google.com/earth/download/gep/agree.html?hl=en-GB)
 
-# Background
-ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
+# Project information
+Here, we will update the latest news, information and status of the project.
 
-The ePTM v2 simulates three aspects of aquatic animal movement: migration by swimming, route selection through complex topologies such as river branches and channel junctions in the presence of flow reversals due to tides and water operations, and mortality by predation. While the details of these mechanisms are too complex to discuss here, a brief description of the model structure is available here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/documents/documentation/ePTM_Study_Plan_FINAL_02_12_2021_v2.pdf). This document also contains information on how the model continues to be, and can be used in a variety of water management applications. We have made a video describing the biological behavior rules in the model, which can be found here: [Link](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/Sridharan_04_09_21_BDSC_ePTMV2Description.mp4). 
-
-## Model development process
-This is a scientific model that has been developed with the following core principles:
-1. Be self-consistent across multiple scales of motion and include realistic physical and biological processes
-2. Be nimble and scalable enough to be deployed for multi-decadal population dynamics simulations and be versatile enough to be used either as a standalone or as a component of a larger modeling ecosystem while yet retaining state-of-the-art numerical sophistication and realism
-3. Be borne out of an inclusive and transparent process through multi-entity collaboration which utilizes hiqgh-quality scientific data, a multidisciplinary development team and active stakeholder engagement with domain experts and decision makers in the California Central Valley.
-
-The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Bureau of Reclamation. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
-
-Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/resources).
+## News
+The ePTM v2 is currently being used in the evaluation of alternative water management operations under climate change and seal-level rise for the Delta Conveyance Project in California.
 
 ## Core team
 The core model development team comprises of the following entities:
