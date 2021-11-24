@@ -57,11 +57,16 @@ The ePTM v1.0 was developed in collboration between the National Marine Fisherie
 
 Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/resources).
 
+## Core team
 The core model development team comprises of the following entities:
 University of California, Santa Cruz: Institute of Marine Sciences
 Southwest Fisheries Sience Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
 United States Bureeau of Reclamation
 Qeda Consulting, LLC.
+
+## Funding
+Principle support for the scientific fundamentals of the development of ePTM v2 has been provided by a California Proposition 1 scientific research grant awarded by the California Deparment of Fish and Wildlife
+Principle support for the integration of the model for decision support in the California Central Valley, and for stakeholder engagement has been provided by the Bureau of Reclamation through a cooperative agreement with the University of California, Santa Cruz.
 
 **Our funding partners**
 
