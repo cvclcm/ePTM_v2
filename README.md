@@ -46,6 +46,18 @@ Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating thro
 
 In the context of the California Central Valley, this model is used to provide monthly survival estimates for endangered juvenile Sacramento River Winter-run Chinook salmon rearing and migrating through the Sacramento-San Joaquin Delta. These estimates are then used within a larger stage-structured population dynamics model, the Central Valley Life Cycle Model: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/intro).
 
+# Computing requirements
+The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can be run in one-shot or batch mode. The following hardware and software dependencies are required to run the model:
+1. A powerful laptop or desktop to run multiple months or years of simulations, and a high performance computer or cluster or cloud computing to run multi-decadal simulations 
+2. 32-bit Java runtime environment v.1.8.x to compile and run the model
+3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse
+4. DSM2 v.8.1.2 which is the hydrodynamic enging of the model
+5. HDF5 suite of tools for visualizing and manipulating hydrodynamic model results
+6. A good text editor such as Notepad++
+7. Python 3.x to build scripts for running the model and processing outputs 
+8. R 4.x or Matlab 2018b or above for analyzing model results
+9. HEC-DssVue to visualize hydrodynamic time series from DSM2
+
 # Background
 ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
 
