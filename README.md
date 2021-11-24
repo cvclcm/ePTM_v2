@@ -60,6 +60,7 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 7. Python 3.x to build scripts for running the model and processing outputs: [Link](https://www.python.org/downloads/) 
 8. R 4.x or Matlab 2018b or above for analyzing model results: [Link](https://www.r-project.org/)
 9. HEC-DssVue to visualize hydrodynamic time series from DSM2: [Link](https://www.hec.usace.army.mil/software/hec-dssvue/)
+10. Google Earth Pro to visualize the DSM2 grid (this will be invaluable when setting up the model for cutom use in the California Central Valley): [Link](https://www.google.com/earth/download/gep/agree.html?hl=en-GB)
 
 # Background
 ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
