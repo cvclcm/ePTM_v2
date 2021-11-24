@@ -49,6 +49,11 @@ In the context of the California Central Valley, this model is used to provide m
 
 At the moment, the model has not been configured to run with other hydrodynamic engines. So, if you want to develop a model using ePTM v2 and DSM2 for your system, you will have to create a model grid, calibrate and validate the DSM2 model for predicting flows using this grid, and generate hydrodynamic outputs, which can then be used with ePTM v2. 
 
+![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/SacRiverWinterRunChinookSmolt_SiskoJakeUSFWS.jpg)
+**Sacramento River Winter-run Chinook salmon smolt**
+
+In a similar vein, at the moment, the model has behavior rules appropriate for simulating juvenile salmonid migration, and the model has been calibrated and validated for Chinook salmon of the Sacramento and San Joaquin River systems in California. You can make modifications to the source code to change behavior rules, and recalibrate the model for other species of fish in other systems. Please see the Wiki pages here [Link](https://github.com/cvclcm/ePTM_v2/wiki) for instructions on how to do this. 
+
 # Background
 ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model, a one-dimensional shallow water equation solver. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
 
