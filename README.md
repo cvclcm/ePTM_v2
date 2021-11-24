@@ -23,7 +23,7 @@ It is also an individual-based model in that the migratory life histories of ind
 
 This is is a process-based, or mechanistic model in that, rather than specifying behavior rules through statistical cause-and-effect relationships, the model uses physical and biological constraints based on observations of real fish to direct the movement of simulated fish. Specifically, this is a particle tracking model or stochastic random walk model that simulates the self-correlated movements of simulated fish subject to their local environment, which in this case is the flow of water and the time of day. 
 
-Finally, this is a fully data-driven model. Animal migration through complex environments is a fundamentally multi-scalar process, and in specifying the movement rules in this model, we have adopted the best available acoustic telemetry data on moving fish.
+Finally, this is a fully data-driven model. Animal migration through complex environments is a fundamentally multi-scalar process, and in specifying the movement rules in this model, we have adopted the best available acoustic telemetry data on moving fish. 
 
 **High-resolution acoustically tagged Chinook salmon tracks at a channel junction and their exposure to tagged predators in the Sacramento River allow us to study mesoscale behaviors and specify behavior rules to the simulated fish**
 
@@ -32,6 +32,10 @@ Finally, this is a fully data-driven model. Animal migration through complex env
 **Migration statistics of acoustically tagged Chinook salmon moving from the Sacramento River towards the ocean reveal macroscopic patterns that are used to calibrate the behavior parameters in the model** 
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/MigrationRateVsReach.jpg)
+
+This model has been developed through a thorough review of the scientific literature on salmonid movement, stakeholder engagement, and original scientific research.
+Fundmental discoveries about the mesoscale movement behaviors of fish were reported by us in a recent paper by Olivetti et al. (2021) here: [Link](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13604?casa_token=R24dUwXx0FcAAAAA%3AUYvokc4iyCMO8VpBF6dAU1C306BvSg4r60KTjsV27wgm0W_EKtuH34H8F6m2rLX9-JD7LwvseX23zHU).
+A macroscopic representation of salmonid movements through estuaries was developed and reported by us in a recent paper by Sridharan et al. (2019) here: [Link](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019WR025429?casa_token=8r5Cth5KgH4AAAAA%3Ac67189ZeR9wPmDHx6iglofh9-e719x0znYf-Svraj5li_6-EaScwiWG_0wH9kZhUKxO3HX8V31_CEfo).
 
 # Use case
 Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating through the Sacramento-San Joaquin Delta in Central California towards the San Francisco Bay and the Pacific Ocean. It requires numerical simulations of the river currents and tidal flows which are provided by the California Department of Water Resources (DWR) Delta Simulation Model v.8.1.2, which is hosted by DWR here: [Link](https://github.com/CADWRDeltaModeling/dsm2).
