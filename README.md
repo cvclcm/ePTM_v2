@@ -53,7 +53,7 @@ At the moment, the model has not been configured to run with other hydrodynamic 
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/SacRiverWinterRunChinookSmolt_SiskoJakeUSFWS.jpg)
 
-**Sacramento River Winter-run Chinook salmon smolt**
+**Sacramento River Winter-run Chinook salmon smolt (Photo credit: Jake Sisko, US Fish and Wildlife service)**
 
 In a similar vein, at the moment, the model has behavior rules appropriate for simulating juvenile salmonid migration, and the model has been calibrated and validated for Chinook salmon of the Sacramento and San Joaquin River systems in California. A detailed description of the model calibration and validation can be found here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/resources) under the *Model documentation* tab. You can make modifications to the source code to change behavior rules, and recalibrate the model for other species of fish in other systems. Please see the Wiki pages here [Link](https://github.com/cvclcm/ePTM_v2/wiki) for instructions on how to do this. 
 
