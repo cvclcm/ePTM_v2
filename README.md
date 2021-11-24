@@ -50,6 +50,7 @@ In the context of the California Central Valley, this model is used to provide m
 At the moment, the model has not been configured to run with other hydrodynamic engines. So, if you want to develop a model using ePTM v2 and DSM2 for your system, you will have to create a model grid, calibrate and validate the DSM2 model for predicting flows using this grid, and generate hydrodynamic outputs, which can then be used with ePTM v2. 
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/SacRiverWinterRunChinookSmolt_SiskoJakeUSFWS.jpg)
+
 **Sacramento River Winter-run Chinook salmon smolt**
 
 In a similar vein, at the moment, the model has behavior rules appropriate for simulating juvenile salmonid migration, and the model has been calibrated and validated for Chinook salmon of the Sacramento and San Joaquin River systems in California. You can make modifications to the source code to change behavior rules, and recalibrate the model for other species of fish in other systems. Please see the Wiki pages here [Link](https://github.com/cvclcm/ePTM_v2/wiki) for instructions on how to do this. 
