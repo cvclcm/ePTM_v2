@@ -99,7 +99,7 @@ Southwest Fisheries Sience Center, National Marine Fisheries Service, National O
 
 United States Bureeau of Reclamation
 
-Qeda Consulting, LLC.
+QEDA Consulting, LLC.
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=cvclcm/ePTM_v2)
 
