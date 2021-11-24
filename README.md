@@ -5,6 +5,14 @@ The Enhanced Particle Tracking Model Version 2.0 (ePTM v2) is a computational mo
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/ePTMv2Logo.jpg)
 
+# Table of contents
+1. Introduction
+2. Use case
+3. Computing requirements
+5. Installation
+4. Background
+
+# Introduction
 The model can be described in a variety of ways to varying degrees of specificity:
 
 This model is a decision support tool, because it is being, and can be used to produce the scientific insights necessary to make management and policy decisions on water supply in a multipurpose surface water system under a regime of uncertainty due to factors such as climate change, sea-level rise, ageing infrastructure and changing land use and land cover.
@@ -25,14 +33,36 @@ Finally, this is a fully data-driven model. Animal migration through complex env
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/MigrationRateVsReach.jpg)
 
-## Application
+# Use case
 Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating through the Sacramento-San Joaquin Delta in Central California towards the San Francisco Bay and the Pacific Ocean. It requires numerical simulations of the river currents and tidal flows which are provided by the California Department of Water Resources (DWR) Delta Simulation Model v.8.1.2, which is hosted by DWR here: [Link](https://github.com/CADWRDeltaModeling/dsm2).
 
 **ePTM v2 model domain for application to Sacramento River Winter run Chinook salmon smolt migration with the Sacramento River highlighted**
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/DeltaMapwSacRiver.jpg)
 
-## Background
+In the context of the California Central Valley, this model is used to provide monthly survival estimates for endangered juvenile Sacramento River Winter-run Chinook salmon rearing and migrating through the Sacramento-San Joaquin Delta. These estimates are then used within a larger stage-structured population dynamics model, the Central Valley Life Cycle Model: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/intro).
+
+# Background
 ePTM v2 adds behavior classes to DWR's Particle Tracking Model (PTM), which simulates neutrally buoyant, passive tracers. Both the PTM and the ePTM v2 require a hydrodynamic engine to simulate water velocities and Depths. This is achieved by the DSM2 model. A detailed peer review of the model can be found in the paper by Sridharan et al. (2018) [Link](https://escholarship.org/uc/item/0vm955tw)). The ePTM v2 also includes significant numerical improvements to the underlying random walk algorithms in the PTM, most of which are detailed in the paper by Sridharan et al. (2017) [Link](https://ascelibrary.org/doi/full/10.1061/(ASCE)HY.1943-7900.0001399?casa_token=yMf5O160xyoAAAAA:v891cN9CzxrTTSQBoi3FTBvZsfMKstbIU1Et8QPf5Dh6dHIJsE-wh8eotqCa2S-8X-MV4hgnXA).
 
 The ePTM v2 simulates three aspects of aquatic animal movement: migration by swimming, route selection through complex topologies such as river branches and channel junctions in the presence of flow reversals due to tides and water operations, and mortality by predation. While the details of these mechanisms are too complex to discuss here, a brief description of the model structure is available here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/documents/documentation/ePTM_Study_Plan_FINAL_02_12_2021_v2.pdf). This document also contains information on how the model continues to be, and can be used in a variety of water management applications. We have made a video describing the biological behavior rules in the model, which can be found here: [Link](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/Sridharan_04_09_21_BDSC_ePTMV2Description.mp4). 
+
+## Model development process
+This is a scientific model that has been developed with the following core principles:
+1. Be self-consistent across multiple scales of motion and include realistic physical and biological processes
+2. Be nimble and scalable enough to be deployed for multi-decadal population dynamics simulations and be versatile enough to be used either as a standalone or as a component of a larger modeling ecosystem while yet retaining state-of-the-art numerical sophistication and realism
+3. Be borne out of an inclusive and transparent process through multi-entity collaboration which utilizes hiqgh-quality scientific data, a multidisciplinary development team and active stakeholder engagement with domain experts and decision makers in the California Central Valley.
+
+The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Bureau of Reclamation. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
+
+Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link}(https://oceanview.pfeg.noaa.gov/wrlcm/resources).
+
+The core model development team comprises of the following entities:
+University of California, Santa Cruz: Institute of Marine Sciences
+Southwest Fisheries Sience Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
+United States Bureeau of Reclamation
+Qeda Consulting, LLC.
+
+**Our funding partners**
+
+![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/CDFWLogo.png) ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/BORLogo.png)
