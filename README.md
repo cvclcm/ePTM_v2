@@ -104,7 +104,8 @@ United States Bureeau of Reclamation
 QEDA Consulting, LLC.
 
 ## Funding
-Principle support for the scientific fundamentals of the development of ePTM v2 has been provided by a California Proposition 1 scientific research grant awarded by the California Deparment of Fish and Wildlife
+Principle support for the scientific fundamentals of the development of ePTM v2 has been provided by a California Proposition 1 scientific research grant awarded by the California Deparment of Fish and Wildlife.
+
 Principle support for the integration of the model for decision support in the California Central Valley, and for stakeholder engagement has been provided by the Bureau of Reclamation through a cooperative agreement with the University of California, Santa Cruz.
 
 **Our funding partners**
