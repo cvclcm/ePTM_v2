@@ -1,0 +1,66 @@
+ENVVAR
+NAME                     VALUE                                 
+DSM2INPUTDIR             DSM2_COMMON_INPUT_DIR                                           
+
+DSM2MODIFIER             DSM2_HYDRO_H5_FILEnAME               				#Study name used for DSM2 output                  
+
+DSM2AGENCY               dwr
+VERSIONDATE              201203                                                       
+HISTFLOWVERSION          DWR-DMS-${VERSIONDATE}                                    
+HISTSTAGEVERSION         ${HISTFLOWVERSION}
+HISTQUALVERSION          DWR-DMS-${VERSIONDATE}
+#runtime                
+START_DATE               DSM2_STARTDATE_ddMMMyyyy
+QUAL_START_DATE          DSM2_STARTDATE_ddMMMyyyy
+PTM_START_DATE           ${QUAL_START_DATE}
+START_TIME               0000
+END_DATE                 DSM2_ENDDATE_ddMMMyyyy
+END_TIME                 0000
+
+TSINPUTDIR               DSM2_TIMESERIES_DIR
+
+TEMPDIR                  SCRATCH_DIR       							#Spacious directory for scratch files             
+#Input envvars          
+STUDYDIR                 PATH_TO_DSM_HYDRO_OUTPUTS
+
+BNDRYINPUT               ${TSINPUTDIR}/hist_19902012.dss
+GATEFILE                 ${TSINPUTDIR}/gates-v8-06212012.dss
+
+DICUFILE                 ${TSINPUTDIR}/dicu_${VERSIONDATE}.dss
+
+QUALBNDINP               ${TSINPUTDIR}/hist_19902012.dss
+DICUFILE_ECS             ${TSINPUTDIR}/dicuwq_3vals.dss        		#seasonal DICU file for EC                        
+
+DICUFILE_ECE             ${TSINPUTDIR}/dicuwq_3vals_extended.dss 	#expanded DICU file for EC                        
+DICUFILE-ECS             ${TSINPUTDIR}/dicu.dss                 	#seasonal DICU file for EC                        
+CLIMATE                  ${TSINPUTDIR}/climate-5years.dss
+STOCKTON_FLOW_FILE       constant                               	#needed for DO runs, if not available use constant
+STOCKTON_EFF_FLOW        0.0                                    	#needed for DO runs, if not available use 0.0     
+
+#Output                 
+DSM2OUTPUTDIR            PATH_TO_DSM_HYDRO_OUTPUTS
+QUALPTMOUTPUT		     qual_PTM_output.txt
+OUTPUTFILE               ${DSM2MODIFIER}_out.dss
+                                                                     
+#hydro                  
+FLOWPATTERN              D:/Projects/ePTM/Outputs/FLOWPATTERN.dss
+HYDROOUTDSSFILE          ${DSM2OUTPUTDIR}/${OUTPUTFILE}
+HYDROOUTFILE             ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.hof
+HYDRORSTFILE             ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.hrf
+HYDROTIDEFILE            ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.h5
+GATEOUTPUTFILE           ${DSM2OUTPUTDIR}/${OUTPUTFILE}                                                           
+#Qual                   
+QUALOUTDSSFILE           ${DSM2OUTPUTDIR}/${OUTPUTFILE}
+QUALOUTFILE              ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.qof
+QUALRSTFILE              ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.qrf
+QUALTIDEFILE             ${DSM2OUTPUTDIR}/${DSM2MODIFIER}_ec.h5
+FINE_OUT                 15MIN
+FINE_OUT_DAY             1DAY                                                                                     
+
+#Jones Tract Levee Break
+EVENTSINPUT              ${TSINPUTDIR}/events.dss
+
+#PTM
+PTMOUTFILE               ${DSM2OUTPUTDIR}/${DSM2MODIFIER}.pof
+PTMOUTPUTFILE            ${DSM2OUTPUTDIR}/ptmout.txt
+END

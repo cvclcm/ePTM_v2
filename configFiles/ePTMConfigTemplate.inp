@@ -1,0 +1,109 @@
+# PTM2 input files
+
+CONFIGURATION
+PATH_TO_DSM2_CONFIG_FILE
+END
+
+
+SCALAR
+NAME                             VALUE
+title                        "SIMULATION_ID
+
+display_intvl                1day
+binary_output                false
+dss_direct                   true
+flush_output                 15day
+printlevel                   1
+theta                        0.6
+
+run_start_date               PTM_STARTDATE_ddMMMyyyy
+run_end_date                 PTM_ENDDATE_ddMMMyyyy
+run_start_time               PTM_STARTTIME_HHMM
+run_end_time                 PTM_ENDDATE_HHMM
+temp_dir                     ${TEMPDIR}
+
+ptm_time_step                15min
+ptm_no_animated              2000 				#Can be modified, but recommend holding at 2000 particles for stability
+
+ptm_ivert                    t
+ptm_itrans                   t
+ptm_iey                      t
+ptm_iez                      t
+
+ptm_flux_percent             t
+ptm_group_percent            t
+ptm_flux_cumulative          t
+
+ptm_random_seed              50133
+ptm_trans_constant           0.6
+ptm_vert_constant            0.0067
+
+ptm_trans_a_coef             1.2
+ptm_trans_b_coef             0.3
+ptm_trans_c_coef             -1.5
+END
+
+
+IO_FILE
+MODEL      TYPE      IO      INTERVAL    FILE
+ptm        trace     out     none        PATH_TO_TRACE_OUTPUT_FILE
+ptm        output    out     none        PATH_TO_POF_FILE
+ptm        echo      out     none        PATH_TO_ECHO_FILE
+END
+
+
+TIDEFILE
+START_DATE      END_DATE      FILE
+runtime         length        ${HYDROTIDEFILE}
+END
+
+
+GROUP
+NAME
+chipps_east
+chipps_west
+ag_div
+swp
+cvp
+mtz
+franks
+whole
+END
+
+
+GROUP_MEMBER
+GROUP_NAME    MEMBER_TYPE     PATTERN
+chipps_east   channel         (288|294|291)						#Some basic outputs that will be written to text. Can be modified according to DSM2 user manual
+chipps_west   channel         (442|437)
+ag_div        qext            dicu_div_.*
+ag_div        qext            bbid.*
+swp           qext            swp
+cvp           qext            cvp
+mtz           stage           mtz.*
+franks        reservoir       franks_tract
+whole         channel         .*
+whole         reservoir       .*
+END
+
+
+PARTICLE_GROUP_OUTPUT
+NAME         GROUP_NAME         INTERVAL      FILE
+franks       franks             15min         PATH_TO_EPTM_OUTPUT_TEXT_FILE
+whole        whole              15min         PATH_TO_EPTM_OUTPUT_TEXT_FILE
+whole_15min  whole              1hour         PATH_TO_EPTM_OUTPUT_TEXT_FILE
+END
+
+
+PARTICLE_FLUX_OUTPUT
+NAME          FROM_WB              TO_WB                INTERVAL  FILE
+export_swp    res:clifton_court    group:swp            15min     PATH_TO_EPTM_OUTPUT_TEXT_FILE
+export_cvp    chan:216             group:cvp            15min     PATH_TO_EPTM_OUTPUT_TEXT_FILE
+past_mtz      chan:441             group:mtz            15min     PATH_TO_EPTM_OUTPUT_TEXT_FILE
+past_chipps   group:chipps_east    group:chipps_west    15min     PATH_TO_EPTM_OUTPUT_TEXT_FILE
+diversion_ag  group:all            group:ag_div         15min     PATH_TO_EPTM_OUTPUT_TEXT_FILE
+END
+
+
+PARTICLE_INSERTION
+NODE     NPARTS     DELAY     DURATION
+END
