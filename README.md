@@ -73,8 +73,6 @@ Throguhout the model development process, we have engaged with the local, region
 # Computing requirements
 The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can be run in one-shot or batch mode. The following hardware and software dependencies are required to run the model:
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=cvclcm&theme=blue-green)
-
 1. A powerful laptop or desktop to run multiple months or years of simulations, and a high performance computer or cluster or cloud computing to run multi-decadal simulations 
 2. 32-bit Java runtime environment 8 to compile and run the model ![Image](https://img.shields.io/badge/java-jre%201.8-blue): [Link](https://www.java.com/download/ie_manual.jsp)
 3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers)
