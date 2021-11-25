@@ -15,7 +15,6 @@ If you have questions regarding the model, please contact *vamsi.sridharan@noaa.
 2. Use case
 3. Background
 4. Computing requirements
-5. Installation
 6. Project information
 
 # Introduction
@@ -107,6 +106,14 @@ Here, we will update the latest news, information and status of the project.
 
 ## News
 The ePTM v2 is currently being used in the evaluation of alternative water management operations under climate change and seal-level rise for the Delta Conveyance Project in California.
+
+## Future improvements
+There are a few areas in which the model can be improved:
+
+1. Since we know that fish do not behave like passive particles that simply go with the flow (Sridharan et al. 2017; Perry et al. 2018; Gross et al. 2021), the lateral and vertical random walk movements should be updated to draw from observed distributions conditional on local flows rather than simply allowing simulated fish to be kicked by turbulent eddies.
+2. Additional efficiencies may be gained by studying where in a complex surface water system movements are predominantly 2d and 3d in nature, and where 1d along-stream movement simulation may suffice. 
+3. Updating how the code interacts with DSM2 so that it can be run independently of the underlying hydrodynamic engine.
+4. Updating the code to run on Linux and Mac as well. 
 
 ## Core team
 The core model development team comprises of the following entities:
