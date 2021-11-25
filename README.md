@@ -43,6 +43,17 @@ This model has been developed through a thorough review of the scientific litera
 Fundmental discoveries about the mesoscale movement behaviors of fish were reported by us in a recent paper by Olivetti et al. (2021) here: [Link](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13604?casa_token=R24dUwXx0FcAAAAA%3AUYvokc4iyCMO8VpBF6dAU1C306BvSg4r60KTjsV27wgm0W_EKtuH34H8F6m2rLX9-JD7LwvseX23zHU).
 A macroscopic representation of salmonid movements through estuaries was developed and reported by us in a recent paper by Sridharan et al. (2019) here: [Link](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019WR025429?casa_token=8r5Cth5KgH4AAAAA%3Ac67189ZeR9wPmDHx6iglofh9-e719x0znYf-Svraj5li_6-EaScwiWG_0wH9kZhUKxO3HX8V31_CEfo).
 
+## Why do you need ePTM v2?
+If you are a scientist who wants to understand how migratory aquatic animals navigate complex surface waters, or you are a water manager or conservation policy maker who needs to know what impact a new water project or policy will have on local wildlife, you need a nimble, reliable model to help you make sense of what's going on. Acoustic telemetry programs are expensive to run, and only provide patchy data. What happens in those regions where there is limited data coverage? But a statistical model that links macroscopic system variables such as flow with survival will surely do, you might think. What happens when the statistical relationships change due to uncertainty from climate change and other factors? A mechanistic model like the ePTM can predict what is likley to happen to fish in novel environmental conditions. Below are model validation results (comparison of model performance with data held out during calibration).
+
+**Out of sample validation of the flow versus survival relationship in for Winter-run juvenile Chinook salmon in the Sacramento San Joaquin Delta. A low bias (<0.1), significant overalp in the 95% confidence intervals in the acoustic telemetry data and model results and functionally similar relationships recovered by the model indicates its value**
+
+![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/FlowvsSurvival.jpg)
+
+**Out of sample validation of the probability of entrainment into different migratory routes during flood vs ebb tides indicates that the model is able to predict migratory routes well. The poor performance in 2014 entry into Georgiana slough was due to the placement of a fish passage barrier that we did not simulate in the model**
+
+![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/RoutingProbabilties.jpg)
+
 # Use case
 Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating through the Sacramento-San Joaquin Delta in Central California towards the San Francisco Bay and the Pacific Ocean. It requires numerical simulations of the river currents and tidal flows which are provided by the California Department of Water Resources (DWR) Delta Simulation Model (DSM2) v.8.1.2, which is hosted by DWR here: [Link](https://github.com/CADWRDeltaModeling/dsm2).
 
