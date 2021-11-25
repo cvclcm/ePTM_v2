@@ -21,15 +21,11 @@ nRep = NUMBER_OF_STOCHASTIC_REPLICATE_FISH                       #Since ePTM v2 
 releaseLocation <- 'LOCATION_COMMON_NAME'                        #Starting location
 releaseNode <- LIST_OF_DSM2_INTERNAL_NODE                        #Specify ocations where simulated fish should be released 
 checkpoints <- LIST_OF_DSM2_INTERNAL_NODES                    	 #Locations where particle arrival histories are desired. Restrict to about 10 for stability
-startDate = c(as_datetime('2013-04-15 22:30:34', tz="America/Los_Angeles"),
-              as_datetime('2016-05-15 01:58:42', tz="America/Los_Angeles"),
-              as_datetime('2014-02-19 02:28:13', tz="America/Los_Angeles"),
-              as_datetime('2015-02-09 11:37:23', tz="America/Los_Angeles"))
-endDate = c(as_datetime('2013-05-16 02:38:28', tz="America/Los_Angeles"),
-            as_datetime('2016-05-31 03:56:24', tz="America/Los_Angeles"),
-            as_datetime('2014-04-06 05:27:18', tz="America/Los_Angeles"),
-            as_datetime('2015-04-02 13:39:48', tz="America/Los_Angeles"))
-                                                                 #Required simulation start and end dates
+startDatetime <- as_datetime(as.POSIXlt(strptime(relReach$RelDate[1], format = "%m/%d/%Y %H:%M")),
+                                   tz="America/Los_Angeles") - days(7)
+      endDatetime   <- as_datetime(as.POSIXlt(strptime(relReach$RecDate[nrow(relReach)], format = "%m/%d/%Y %H:%M")),
+                                   tz="America/Los_Angeles") + days(10)   
+                                                                 #Required simulation start and end dates <--- MODIFY TIMEZONE AS APPLICABLE
 
 #-----------------------------------------------------------
 #Writing to HDF5 files for junction types
