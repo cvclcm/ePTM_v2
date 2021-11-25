@@ -49,7 +49,7 @@ If you are a scientist who wants to understand how migratory aquatic animals nav
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/FlowvsSurvival.jpg)
 
-**Out of sample validation of the probability of entrainment into different migratory routes during flood vs ebb tides indicates that the model is able to predict migratory routes well. The poor performance in 2014 entry into Georgiana slough was due to the placement of a fish passage barrier that we did not simulate in the model**
+**Out of sample validation of the probability of entrainment into different migratory routes during flood vs ebb tides indicates that the model is able to predict migratory routes well. In 2014, a floating fish guidance structure was placed at the head of Georgiana Slough which we only approximately represented in the model**
 
 ![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/RoutingProbabilties.jpg)
 
