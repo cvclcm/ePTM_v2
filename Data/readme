@@ -1,0 +1,16 @@
+Data description
+
+Fall- and Winter-run Chinook JSATS 1D acoustic telemetry studies: SWFSC. Source: https://oceanview.pfeg.noaa.gov/CalFishTrack/
+
+Late-Fall Chinook VEMCO 1D acoustic telemetry studies: USFWS. Source: Russel Perry, USGS
+USFWS_Late_Fall_VEMCO_*.csv contain first detections at various North Delta stations
+
+Steelhead VEMCO 1D acoustic telemetry studies: USFWS, Source: Rebecca Buchanan, Univ. Washington, Seattle
+*Rel_<year>.csv, *DetHist_<year>.csv, *Fish_<year>.csv contain full release, detection and details of tagged juveniel steelhead released between 2011 and 2013 in the South Sacramento-San Joaquin Delta.  
+
+Telemtry stations
+st<year>.csv and Vemco telemetry *.csv contain GPS coordinates of the telmetry stations used.
+
+Hydrodynamic data was generated using DWR-DSM2 and OpenFOAM
+
+2D acoustic tracking studies conducted on Chinook salmon and Steelhead at the Head of Old River and Georgiana Slough were used in this project. This data includes acoustic tracking of fish as well as ADCP near-surface water velocities obtained by USGS, USFWS, DWR and AECOM Ltd. The data is hosted by DWR. Please contact Kate Le (Kate.Le@water.ca.gov) for inquiries about these datasets.
