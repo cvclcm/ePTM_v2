@@ -51,7 +51,7 @@ If you are a scientist who wants to understand how migratory aquatic animals nav
 
 **Out of sample validation of the probability of entrainment into different migratory routes during flood vs ebb tides indicates that the model is able to predict migratory routes well. In 2014, a floating fish guidance structure was placed at the head of Georgiana Slough which we only approximately represented in the model**
 
-![Image]()
+![Image](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/RoutingProbabilties.jpg)
 
 # Use case
 Currently ePTM v2 has been calibrated for juvenile Chinook salmon migrating through the Sacramento-San Joaquin Delta in Central California towards the San Francisco Bay and the Pacific Ocean. It requires numerical simulations of the river currents and tidal flows which are provided by the California Department of Water Resources (DWR) Delta Simulation Model (DSM2) v.8.1.2, which is hosted by DWR here: [Link](https://github.com/CADWRDeltaModeling/dsm2).
