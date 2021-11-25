@@ -100,7 +100,7 @@ The core model development team comprises of the following entities:
 
 University of California, Santa Cruz: Institute of Marine Sciences
 
-Southwest Fisheries Sience Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
+Southwest Fisheries Science Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
 
 United States Bureeau of Reclamation
 
