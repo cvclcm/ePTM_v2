@@ -130,6 +130,15 @@ United States Bureeau of Reclamation
 
 QEDA Consulting, LLC.
 
+## Acknowledgements
+The core modeling team acknowledges the California Department of Water Resources for their significant contributions to the project.
+
+We also thank the Fisheries Cooperative Program at the University od California, Santa Cruz, for providing technical and program support for the project.
+
+We are grateful to the United States Geological Survey, the California Department of Fish and Wildlife, the United States Fish and Wildlife Service and the University of Washington, Seattle, for providing the data used to build, calibrate and the validate the model.
+
+We would also like to acknowledge the domain expertise of various local, regional and federal agency, and academic and industry stakeholders which we incorporated during early model development. 
+
 ## Funding
 Principle support for the scientific fundamentals of the development of ePTM v2 has been provided by a California Proposition 1 scientific research grant awarded by the California Deparment of Fish and Wildlife.
 
