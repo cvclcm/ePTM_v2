@@ -110,10 +110,14 @@ The ePTM v2 is currently being used in the evaluation of alternative water manag
 ## Future improvements
 There are a few areas in which the model can be improved:
 
-1. Since we know that fish do not behave like passive particles that simply go with the flow (Sridharan et al. 2017; Perry et al. 2018; Gross et al. 2021), the lateral and vertical random walk movements should be updated to draw from observed distributions conditional on local flows rather than simply allowing simulated fish to be kicked by turbulent eddies.
+1. Since we know that fish do not behave like passive particles that simply go with the flow (Sridharan et al. 2017; Hance et al. 2020; Gross et al. 2021), the lateral and vertical random walk movements should be updated to draw from observed distributions conditional on local flows rather than simply allowing simulated fish to be kicked by turbulent eddies.
 2. Additional efficiencies may be gained by studying where in a complex surface water system movements are predominantly 2d and 3d in nature, and where 1d along-stream movement simulation may suffice. 
-3. Updating how the code interacts with DSM2 so that it can be run independently of the underlying hydrodynamic engine.
-4. Updating the code to run on Linux and Mac as well. 
+3. Using water velocities measured within the actual physical domain of the model under a variety of flow conditions rather than experimental flow profiles obtained in the laboratory flume.
+4. Updating the code to use 64-bit Java.
+5. Updating the code to run on Linux and Mac as well.
+6. Updating how the code interacts with DSM2 so that it can be run independently of the underlying hydrodynamic engine.7.  
+
+Would you like to contribute to these improvements? If so, please fork the code to your own repo, and send us a pull request once you have a stable build
 
 ## Core team
 The core model development team comprises of the following entities:
