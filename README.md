@@ -92,7 +92,7 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 
 1. A powerful laptop or desktop to run multiple months or years of simulations, and a high performance computer or cluster or cloud computing to run multi-decadal simulations 
 2. 32-bit Java runtime environment 8 to compile and run the model ![Image](https://img.shields.io/badge/java-jre%201.8-blue): [Link](https://www.java.com/download/ie_manual.jsp)
-3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers)
+3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers). **Note that you will need an IDE that supports 32-bit Java 8**.
 4. DSM2 v.8.1.2 which is the hydrodynamic engine of the model ![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange): [Link](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
 5. HDF5 suite of tools for visualizing and manipulating hydrodynamic model results: [Link](https://www.hdfgroup.org/solutions/hdf5/)
 6. A good text editor such as Notepad++: [Link](https://notepad-plus-plus.org/downloads/)
