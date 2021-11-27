@@ -89,13 +89,13 @@ Throguhout the model development process, we have engaged with the local, region
 The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can be run in one-shot or batch mode. The following hardware and software dependencies are required to run the model:
 
 1. A powerful laptop or desktop to run multiple months or years of simulations, and a high performance computer or cluster or cloud computing to run multi-decadal simulations 
-2. 32-bit Java runtime environment 8 to compile and run the model ![Image](https://img.shields.io/badge/java-jre%201.8-blue): [Link](https://www.java.com/download/ie_manual.jsp)
-3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers). **Note that you will need an IDE that supports 32-bit Java 8**, which you can find from here [Link](https://archive.eclipse.org/eclipse/downloads/).
-4. DSM2 v.8.1.2 which is the hydrodynamic engine of the model ![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange): [Link](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
+2. 32-bit Java runtime environment 8 to compile and run the model [![Image](https://img.shields.io/badge/java-jre%201.8-blue)](https://www.java.com/download/ie_manual.jsp)
+3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers). **Note that you will need an IDE that supports 32-bit Java 8**, which you can find from here [![Image](https://img.shields.io/badge/Eclipse-4.16-red)](https://archive.eclipse.org/eclipse/downloads/).
+4. DSM2 v.8.1.2 which is the hydrodynamic engine of the model [![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange)](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
 5. HDF5 suite of tools for visualizing and manipulating hydrodynamic model results: [Link](https://www.hdfgroup.org/solutions/hdf5/)
 6. A good text editor such as Notepad++: [Link](https://notepad-plus-plus.org/downloads/)
 7. Python 3.x to build scripts for running the model and processing outputs ![Image](https://img.shields.io/badge/python-3.7%2B-green): [Link](https://www.python.org/downloads/) 
-8. R 4.x or Matlab 2018b or above for analyzing model results ![Image](https://img.shields.io/badge/R-4.0%2B-yellow): [Link](https://www.r-project.org/)
+8. R 4.x or Matlab 2018b or above for analyzing model results [![Image](https://img.shields.io/badge/R-4.0%2B-yellow)](https://www.r-project.org/)
 9. HEC-DssVue to visualize hydrodynamic time series from DSM2: [Link](https://www.hec.usace.army.mil/software/hec-dssvue/)
 10. Google Earth Pro to visualize the DSM2 grid (this will be invaluable when setting up the model for cutom use in the California Central Valley): [Link](https://www.google.com/earth/download/gep/agree.html?hl=en-GB)
 
