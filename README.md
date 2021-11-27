@@ -24,7 +24,7 @@ It is a type of agent-based model, in which simulated fish interact with their l
 
 It is also an individual-based model in that the migratory life histories of individual simulated fish are tracked over a large spatial region. Although, we must note that, in its current form, the model does not simulate the interactions within schools of fishes, or between predators and their prey in an explicit way.
 
-This is is a process-based, or mechanistic model in that, rather than specifying behavior rules through statistical cause-and-effect relationships, the model uses physical and biological constraints based on observations of real fish to direct the movement of simulated fish. Specifically, this is a particle tracking model or stochastic random walk model that simulates the self-correlated movements of simulated fish subject to their local environment, which in this case is the flow of water and the time of day. 
+This is is a process-based, or mechanistic model which uses physical and biological constraints based on observations of real fish to direct the movement of simulated fish. Specifically, this is a particle tracking model or stochastic random walk model that simulates the self-correlated movements of simulated fish subject to their local environment, which in this case is the flow of water and the time of day. 
 
 Finally, this is a fully data-driven model. Animal migration through complex environments is a fundamentally multi-scalar process, and in specifying the movement rules in this model, we have adopted the best available acoustic telemetry data on moving fish. 
 
@@ -79,9 +79,9 @@ The ePTM v2 simulates three aspects of aquatic animal movement: migration by swi
 This is a scientific model that has been developed with the following core principles:
 1. Be self-consistent across multiple scales of motion and include realistic physical and biological processes
 2. Be nimble and scalable enough to be deployed for multi-decadal population dynamics simulations and be versatile enough to be used either as a standalone or as a component of a larger modeling ecosystem while yet retaining state-of-the-art numerical sophistication and realism
-3. Be borne out of an inclusive and transparent process through multi-entity collaboration which utilizes hiqgh-quality scientific data, a multidisciplinary development team and active stakeholder engagement with domain experts and decision makers in the California Central Valley.
+3. Be borne out of an inclusive and transparent process through multi-entity collaboration which utilizes high-quality scientific data, a multidisciplinary development team and active stakeholder engagement with domain experts and decision makers in the California Central Valley.
 
-The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Bureau of Reclamation. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
+The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Geological Survey. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
 
 Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/resources) under the *Workshops* and *Stakeholder shared documents* tabs, respectively.
 
@@ -124,7 +124,7 @@ University of California, Santa Cruz: Institute of Marine Sciences
 
 Southwest Fisheries Science Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration
 
-United States Bureeau of Reclamation
+Western Fisheries Research Center, United States Geological Survey
 
 QEDA Consulting, LLC.
 
