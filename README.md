@@ -1,7 +1,7 @@
 # ePTM_v2
 The Enhanced Particle Tracking Model Version 2.0 (ePTM v2) is a computational model that simulates the oceanward migration of fish that spawn in rivers and mature in the Ocean. It is a synthetic fish telemetry system that allows scientists, practioners and natural resources managers understand how aquatic organisms such as fish use their environment.
 
-![Alt Text]()
+![Alt Text](https://github.com/cvclcm/ePTM_v2/blob/main/SupportingMaterial/animOutputCropped_1.gif)
 
 Information on installing the model, using it, and its structure can be found in the model Wiki pages here: [Link](https://github.com/cvclcm/ePTM_v2/wiki).
 
