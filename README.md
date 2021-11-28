@@ -94,7 +94,7 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 4. DSM2 v.8.1.2 which is the hydrodynamic engine of the model [![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange)](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
 5. HDF5 suite of tools for visualizing and manipulating hydrodynamic model results: [Link](https://www.hdfgroup.org/solutions/hdf5/)
 6. A good text editor such as Notepad++: [Link](https://notepad-plus-plus.org/downloads/)
-7. Python 3.x to build scripts for running the model and processing outputs ![Image](https://img.shields.io/badge/python-3.7%2B-green): [Link](https://www.python.org/downloads/) 
+7. Python 3.x to build scripts for running the model and processing outputs [![Image](https://img.shields.io/badge/python-3.7%2B-green)]:(https://www.python.org/downloads/) 
 8. R 4.x or Matlab 2018b or above for analyzing model results [![Image](https://img.shields.io/badge/R-4.0%2B-yellow)](https://www.r-project.org/)
 9. HEC-DssVue to visualize hydrodynamic time series from DSM2: [Link](https://www.hec.usace.army.mil/software/hec-dssvue/)
 10. Google Earth Pro to visualize the DSM2 grid (this will be invaluable when setting up the model for cutom use in the California Central Valley): [Link](https://www.google.com/earth/download/gep/agree.html?hl=en-GB)
