@@ -103,6 +103,10 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 Here, we will update the latest news, information and status of the project.
 
 ## News
+The final report to the California Department of Fish and Wildlife on the Proposition 1 project that partially supported the development fo the ePTM model is now available here: [Link](https://github.com/cvclcm/ePTM_v2/blob/main/documentation/Raimondi_et_al_2021_CDFW_FinalReport.pdf). Please cite as:
+
+Raimondi, P., Hein, A., Sridharan, V., Danner, E., and Lindley, S. 2021. A next-generation model of juvenile salmon migration through the Sacramento-San Joaquin Delta. Report submitted by the University of California Santa Cruz to the California Department of Fish and Wildlife Under Proposition 1 Scientific Award No. P1896007. Sacta Cruz, CA. 55p. Available at: https://github.com/cvclcm/ePTM_v2/blob/main/documentation/Raimondi_et_al_2021_CDFW_FinalReport.pdf.  
+
 The ePTM v2 is currently being used in the evaluation of alternative water management operations under climate change and seal-level rise for the Delta Conveyance Project in California.
 
 ## Future improvements
