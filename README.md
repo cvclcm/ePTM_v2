@@ -112,6 +112,11 @@ Raimondi, P., Hein, A., Sridharan, V., Danner, E., and Lindley, S. 2021. A next-
 ![Image](https://img.shields.io/static/v1?label=12/01&message=2021&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
 The ePTM v2 is currently being used in the evaluation of alternative water management operations under climate change and seal-level rise for the Delta Conveyance Project in California.
 
+![Image](https://img.shields.io/static/v1?label=01/06&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
+The ePTM v2 was featured in an article on Maven's notebook here:
+
+https://mavensnotebook.com/2022/01/06/bay-delta-science-conference-applying-the-winter-run-life-cycle-model-to-pressing-hydromanagement-questions-in-the-central-valley/
+
 ## Future improvements
 There are a few areas in which the model can be improved:
 
