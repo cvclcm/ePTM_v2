@@ -118,7 +118,7 @@ The ePTM v2 was featured in an article on Maven's notebook here:
 https://mavensnotebook.com/2022/01/06/bay-delta-science-conference-applying-the-winter-run-life-cycle-model-to-pressing-hydromanagement-questions-in-the-central-valley/
 
 ![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
-Please note various corrections in ePTMCreatInputs.R in the *scripts* folder and its usage in the Wiki. For specifying checkpoints, please use DSM2 *External* node numbers. This had been reported previously incorrectly as *Internal* node numbers.
+Please note various corrections in ePTMCreatInputs.R in the *scripts* folder and its usage in the Wiki. For specifying checkpoints, please use DSM2 *External* node numbers. This had been reported previously incorrectly as *Internal* node numbers. Additionally, the bar bones script for running the ePTM has been simplified, as has the writeup in the Wiki.
 
 ![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
 The ePTM v2 is going to be used in the evaluation of alternative water management operations under climate change and seal-level rise for the SITES reservoir project in California.
