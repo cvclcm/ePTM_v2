@@ -13,23 +13,19 @@ channelPars <- read.csv('PATH_TO_CONFIG_FILES/ePTMv2CalibValidParams812.csv')
                                                                  #Calibrated ePTM v2 parameters
 
 #Validation datasets
-mainDir <- 'PATH_TO_WORKING_FOLDER'                              #Master folder
-modifier = 'RUN_ID'                           		 		     #Standard filename modifier  
+mainDir <- 'PATH_TO_CONFIG_FOLDER'                               #Config folder
+inpDir <- 'PATH_TO_INPUTS_FOLDER'                                #Inputs folder
+modifier = 'RUN_ID'                           		 		           #Standard filename modifier  
 releaseRegime <- 'CSV_WITH_RELEASE_LOCATION_AND_RELEASE_DATE'    #A release timeseries file which contains the release node and the release date for each fish
 nRep = NUMBER_OF_STOCHASTIC_REPLICATE_FISH                       #Since ePTM v2 is a stochastic model, it would be a good idea to simulate replicates for each release. Simulate at least 10 replicates and no more than 100
-																 #for stability 
+																                                 #for stability 
 releaseLocation <- 'LOCATION_COMMON_NAME'                        #Starting location
 releaseNode <- LIST_OF_DSM2_INTERNAL_NODE                        #Specify ocations where simulated fish should be released 
 checkpoints <- LIST_OF_DSM2_INTERNAL_NODES                    	 #Locations where particle arrival histories are desired. Restrict to about 10 for stability
-startDatetime <- as_datetime(as.POSIXlt(strptime(relReach$RelDate[1], format = "%m/%d/%Y %H:%M")),
-                                   tz="America/Los_Angeles") - days(7)
-      endDatetime   <- as_datetime(as.POSIXlt(strptime(relReach$RecDate[nrow(relReach)], format = "%m/%d/%Y %H:%M")),
-                                   tz="America/Los_Angeles") + days(10)   
-                                                                 #Required simulation start and end dates <--- MODIFY TIMEZONE AS APPLICABLE
 
 #-----------------------------------------------------------
 #Writing to HDF5 files for junction types
-behaviorFile <- paste(mainDir,'BEHAVIOR_PARAMETERS_FILENAME.h5', sep='')
+behaviorFile <- paste(inpDir,'BEHAVIOR_PARAMETERS_FILENAME.h5', sep='')
                                                                #HDF5 filename: <--- *This file is read in by ePTM v2 and assigns behavior parameters to fish in different parts of the model domain***
 scratch <- h5createFile(behaviorFile)                          #Generating a HDF5 file
 h5write(t(as.matrix(channelPars)), file=behaviorFile, name="channelPars")
@@ -53,7 +49,8 @@ h5write(0, file=behaviorFile, name="releaseGroup")             #Particle release
 h5write('Randomizing', file=behaviorFile, name="runID")        #Run identifier
 
 #Generating parameter assignments to channels
-releases <- read.csv(paste(mainDir,releaseRegime,'.csv',sep=''),as.is=TRUE)
+releases <- read.csv(paste(inpDir,releaseRegime,'.csv',sep=''),as.is=TRUE)
+releases$time <- mdy_hm(releases$time, tz = "America/Los_Angeles") 
                                                                  #<--- ***Release information: make sure there is a datetime field labeled "time" that contains the release times
 
 attach(releases) 
@@ -63,15 +60,16 @@ detach(releases)
 #-----------------------------------------------------------
 #Writing ePTM configuration file
 #Getting release schedule and simulation duration information
-startDatetime <- as_datetime(releases$time[1], tz="America/Los_Angeles") - days(7)                        #Starting and ending timestamps of the simulation
-endDatetime   <- as_datetime(releases$time[nrow(releases)], tz="America/Los_Angeles")                                    
+startDatetime <- releases$time[1] - days(7)                    #Starting and ending timestamps of the simulation     
+endDatetime   <- releases$time[nrow(releases)] + days(10)  
+
 startStamp <- paste(sprintf("%02d",day(startDatetime)),        #ePTM simulation timestamps
-                      toupper(as.character(month(startDatetime, label = TRUE, abbr = TRUE))),
-                      as.character(year(startDatetime)),sep='')
+                    toupper(as.character(month(startDatetime, label = TRUE, abbr = TRUE))),
+                    as.character(year(startDatetime)),sep='')
 endStamp   <- paste(sprintf("%02d",day(endDatetime)),
-                      toupper(as.character(month(endDatetime, label = TRUE, abbr = TRUE))),
-                      as.character(year(endDatetime)),sep='')
-  
+                    toupper(as.character(month(endDatetime, label = TRUE, abbr = TRUE))),
+                    as.character(year(endDatetime)),sep='')
+
 ptmConfigFile <- paste('PATH_TO_EPTM_CONFIG_FILE', sep='') 
 ptmTraceFile  <- paste('PATH_TO_TRACE_OUTPUT_FILE', sep='')
 ptmRunFile    <- paste('PATH_TO_POF_FILE', sep='')
@@ -83,7 +81,7 @@ cText = c('# PTM2 input files\n',
           'END\n\n',
           'SCALAR',
           'NAME                             VALUE',
-          paste('title','                        ','"PTM Sim: P=',i,', PAR=',validFiles[i],sep=''),
+          paste('title','                        ','"PTM Sim"',sep=''),
           '',
           paste('display_intvl','                ','1day',sep=''),
           paste('binary_output','                ','false',sep=''),
@@ -171,8 +169,7 @@ for (k in 1:nrow(releases))                                    #Looping through 
   relDatetime <- as_datetime(releases$time[k], tz="America/Los_Angeles")  
                                                                  #Timestamp of the release
   delay[k] <- round(as.numeric(as.period(difftime(relDatetime, startDatetime), units = 'hours'), 
-                               units='hours')) + hour(startDatetime)
-                                                               #Delay to particle release
+                               units='hours'))                 #Delay to particle release
 } 
 nPStamp <- rep(nRep, length(delay))                             #Initializing array of particles to release
 nPStamp <- rowsum(nPStamp,delay)                               #Unique number of particles to release
