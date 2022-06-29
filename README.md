@@ -120,6 +120,9 @@ https://mavensnotebook.com/2022/01/06/bay-delta-science-conference-applying-the-
 ![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
 Please note various corrections in ePTMCreatInputs.R in the *scripts* folder and its usage in the Wiki. For specifying checkpoints, please use DSM2 *External* node numbers. This had been reported previously incorrectly as *Internal* node numbers.
 
+![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
+The ePTM v2 is going to be used in the evaluation of alternative water management operations under climate change and seal-level rise for the SITES reservoir project in California.
+
 ## Future improvements
 There are a few areas in which the model can be improved:
 
