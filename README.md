@@ -83,7 +83,7 @@ This is a scientific model that has been developed with the following core princ
 
 The ePTM v1.0 was developed in collboration between the National Marine Fisheries Service, the California Department of Fish and Wildlife, and the United States Geological Survey. This model extended the DSM2-PTM model to include a suite of possible fish behaviors. With subsequent generous support from the Bureau of Reclamation to integrate the model into the Chinook Salmon Life Cycle Model, and to participate in stakeholder engagement to aid in brainstorming the model, and from the California Department of Fish and Wildlife to combine multiscalar data sources to develop a more fundamental understanding of migratory movements of salmonids, version 2.0 was developed with improved hydrodynamic representations of the flow and more realistic behavior models. 
 
-Throguhout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/resources) under the *Workshops* and *Stakeholder shared documents* tabs, respectively.
+Throughout the model development process, we have engaged with the local, regional and federal stakeholder community. A history of our engagements and stakeholder supplied behavioral hypothesis which are in various stages of evaluation with the model can be found here: [Link](https://oceanview.pfeg.noaa.gov/wrlcm/resources) under the *Workshops* and *Stakeholder shared documents* tabs, respectively.
 
 # Computing requirements
 The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can be run in one-shot or batch mode. The following hardware and software dependencies are required to run the model:
@@ -118,7 +118,7 @@ The ePTM v2 was featured in an article on Maven's notebook here:
 https://mavensnotebook.com/2022/01/06/bay-delta-science-conference-applying-the-winter-run-life-cycle-model-to-pressing-hydromanagement-questions-in-the-central-valley/
 
 ![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
-Please note correction in ePTMCreatInputs.R usage in the Wiki. For specifying checkpoints, please use DSM2 *External* node numbers. This had been reported previously incorrectly as *Internal* node numbers.
+Please note various corrections in ePTMCreatInputs.R in the *scripts* folder and its usage in the Wiki. For specifying checkpoints, please use DSM2 *External* node numbers. This had been reported previously incorrectly as *Internal* node numbers.
 
 ## Future improvements
 There are a few areas in which the model can be improved:
