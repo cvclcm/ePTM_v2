@@ -2,6 +2,7 @@ import os
 
 jarFile = "PATH_TO_JAR_FILE"
 configFile = "PATH_TO_EPTM_CONFIG_FILE"
+behaviorFile = "PATH_TO_BEHAVIOR_HDF5_FILE"
 outFile = "PATH_TO_OUTPUT_FILE"
 configPath = "PATH_TO_CONFIG_FOLDER"
 
