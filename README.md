@@ -123,6 +123,9 @@ Please note various corrections in ePTMCreatInputs.R in the *scripts* folder and
 ![Image](https://img.shields.io/static/v1?label=06/28&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
 The ePTM v2 is going to be used in the evaluation of alternative water management operations under climate change and seal-level rise for the SITES reservoir project in California.
 
+![Image](https://img.shields.io/static/v1?label=07/05&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
+All the training videos from the stakeholder engagement workshop on June 30, 2022 are now available in the documentation/videos section.
+
 ## Future improvements
 There are a few areas in which the model can be improved:
 
