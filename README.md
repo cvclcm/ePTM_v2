@@ -91,7 +91,7 @@ The ePTM v2 is developed in Java and currently runs only on Windows PCs. It can 
 1. A powerful laptop or desktop to run multiple months or years of simulations, and a high performance computer or cluster or cloud computing to run multi-decadal simulations 
 2. 32-bit Java runtime environment 8 to compile and run the model [![Image](https://img.shields.io/badge/java-jre%201.8-blue)](https://www.java.com/download/ie_manual.jsp)
 3. An IDE environment such as Eclipse to work with the model source code. In the installation guide below, instructions will be available on using Eclipse: [Link](https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers). **Note that you will need an IDE that supports 32-bit Java 8**, which you can find from here [![Image](https://img.shields.io/badge/Eclipse-4.16-red)](https://archive.eclipse.org/eclipse/downloads/).
-4. DSM2 v.8.1.2 which is the hydrodynamic engine of the model [![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange)](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
+4. DSM2 which is the hydrodynamic engine of the model [![Image](https://img.shields.io/badge/DSM2-v.8.1.2-orange)](https://water.ca.gov/Library/Modeling-and-Analysis/Bay-Delta-Region-models-and-tools/Delta-Simulation-Model-II) 
 5. HDF5 suite of tools for visualizing and manipulating hydrodynamic model results: [Link](https://www.hdfgroup.org/solutions/hdf5/)
 6. A good text editor such as Notepad++: [Link](https://notepad-plus-plus.org/downloads/)
 7. Python 3.x to build scripts for running the model and processing outputs [![Image](https://img.shields.io/badge/python-3.7%2B-green)](https://www.python.org/downloads/) 
@@ -125,6 +125,9 @@ The ePTM v2 is going to be used in the evaluation of alternative water managemen
 
 ![Image](https://img.shields.io/static/v1?label=07/05&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
 All the training videos from the stakeholder engagement workshop on June 30, 2022 are now available in the documentation/videos section.
+
+![Image](https://img.shields.io/static/v1?label=07/13&message=2022&labelColor=lightgrey&color=brightgreen&style=plastic&logo=githubactions)
+Please note an update to this readme file. We had previosuly erroneously reported that the ePTM needs DSM2 v8.1.2 to run. The ePTM can run with any DSM2 version provided the prerequisites are available.
 
 ## Future improvements
 There are a few areas in which the model can be improved:
