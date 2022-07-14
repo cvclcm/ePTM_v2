@@ -20,8 +20,15 @@ releaseRegime <- 'CSV_WITH_RELEASE_LOCATION_AND_RELEASE_DATE'    #A release time
 nRep = NUMBER_OF_STOCHASTIC_REPLICATE_FISH                       #Since ePTM v2 is a stochastic model, it would be a good idea to simulate replicates for each release. Simulate at least 10 replicates and no more than 100
 																                                 #for stability 
 releaseLocation <- 'LOCATION_COMMON_NAME'                        #Starting location
-releaseNode <- LIST_OF_DSM2_INTERNAL_NODE                        #Specify ocations where simulated fish should be released 
-checkpoints <- LIST_OF_DSM2_INTERNAL_NODES                    	 #Locations where particle arrival histories are desired. Restrict to about 10 for stability
+releaseNode <- LIST_OF_DSM2_EXTERNAL_NODE                        #Specify ocations where simulated fish should be released 
+checkpoints <- LIST_OF_DSM2_EXTERNAL_NODES                    	 #Locations where particle arrival histories are desired. Restrict to about 10 for stability
+
+#Converting checkpoints to internal node numbers
+for (k in 1:length(checkpoints))                                 #Looping through checkpoints
+{
+  checkpoints[k] <- dsm2Nodes$internal[which(dsm2Nodes$external == checkpoints[k])]
+                                                                 #Converting to internal nodes 
+}
 
 #-----------------------------------------------------------
 #Writing to HDF5 files for junction types
