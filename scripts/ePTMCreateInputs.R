@@ -17,6 +17,7 @@ mainDir <- 'PATH_TO_CONFIG_FOLDER'                               #Config folder
 inpDir <- 'PATH_TO_INPUTS_FOLDER'                                #Inputs folder
 modifier = 'RUN_ID'                           		 		           #Standard filename modifier  
 releaseRegime <- 'CSV_WITH_RELEASE_LOCATION_AND_RELEASE_DATE'    #A release timeseries file which contains the release node and the release date for each fish
+dsm2Nodes <- read.csv('PATH_TO_CONFIG_FILES/nodesIntExt_v8_1_2') #Absolute path to this file
 nRep = NUMBER_OF_STOCHASTIC_REPLICATE_FISH                       #Since ePTM v2 is a stochastic model, it would be a good idea to simulate replicates for each release. Simulate at least 10 replicates and no more than 100
 																                                 #for stability 
 releaseLocation <- 'LOCATION_COMMON_NAME'                        #Starting location
